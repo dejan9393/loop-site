@@ -10,7 +10,8 @@
       <h1>Voucher sandbox</h1>
       <form>
         <label for="voucher">Voucher code</label>
-        <input id="voucher" name="voucher" required>
+        <input id="voucher" name="voucher" aria-describedby="voucher-hint" required>
+        <small id="voucher-hint">Example: save 10 becomes SAVE-10.</small>
         <button type="submit">Apply</button>
       </form>
       <p role="status"></p>

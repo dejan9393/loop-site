@@ -1,3 +1,3 @@
 export function normalizeVoucher(code) {
-  return code.trim().toUpperCase();
+  return code.trim().replace(/ +/g, '-').toUpperCase();
 }
